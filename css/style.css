@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2") format("woff2"),
+       url("../fonts/opensans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensansbold.woff2") format("woff2"),
+       url("../fonts/opensansbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensanslight.woff2") format("woff2"),
+       url("../fonts/opensanslight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  min-width: 380px;
+  margin: 0 20px;
+  padding: 10px 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
+  background-image:
+    linear-gradient(to right top, transparent 49%, #f2f8fb 49%, #f2f8fb 50%, transparent 50%),
+    linear-gradient(to right bottom, transparent 49%, #f2f8fb 49%, #f2f8fb 50%, transparent 50%);
+  background-position: 0 0;
+  background-size: 100px 50px;
+  background-repeat: repeat;
+  background-attachment:fixed;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.name {
+  margin: 0 10px 0 0;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 400;
+}
+
+a.language {
+  padding: 0 7px 5px;
+  margin-bottom: 10px;
+}
+
+.language span {
+  border-bottom: 1px dashed #000000;
+}
+
+address {
+  margin-top: 10px;
+  font-style: normal;
+}
+
+
+.info {
+  margin: 25px 0 15px;
+}
+
+.info-list {
+  padding-left: 50px;
+  list-style-type: none;
+}
+
+li {
+  position: relative;
+  margin-bottom: 5px;
+}
+
+li::before {
+  position: absolute;
+  top: 13px;
+  left: -25px;
+  content: "";
+  display: block;
+  width: 3px;
+  height: 3px;
+  background-color: #000000;
+}
+
+.info-link {
+  padding: 0 5px;
+  margin: 0 -5px;
+  line-height: 20px;
+  color: #52626c;
+  text-decoration: none;
+  background-color: #fbfbfb;
+  border-radius: 5px;
+  animation-name: coloring1;
+  animation-duration: 200ms;
+}
+
+@keyframes coloring1 {
+  0% {background-color: #f4f4f4;}
+  100% {background-color: #fbfbfb;}
+}
+
+.info-link:hover {
+  background-color: #f4f4f4;
+  animation-name: coloring2;
+  animation-duration: 400ms;
+}
+
+@keyframes coloring2 {
+  0% {background-color: #fbfbfb;}
+  100% {background-color: #f4f4f4;}
+}
+
+
+.project-name {
+  font-weight: 700;
+}
+
+.project-description {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.work-position {
+  display: block;
+}
